@@ -24,7 +24,9 @@
  function applyLang(lang) {
   document.documentElement.classList.toggle('lang-cs', lang === 'cs');
   document.documentElement.classList.toggle('lang-en', lang === 'en');
-
+   
+  document.documentElement.lang = lang;
+   
   const btnCs = document.getElementById('btn-cs');
   const btnEn = document.getElementById('btn-en');
   if (btnCs && btnEn) {
