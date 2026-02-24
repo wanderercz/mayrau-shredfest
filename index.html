@@ -2,6 +2,13 @@
 <html lang="cs">
 <head>
   <meta charset="utf-8" />
+<script>
+  (function () {
+    var lang = 'cs';
+    try { lang = (localStorage.getItem('msf_lang') === 'en') ? 'en' : 'cs'; } catch(e){}
+    document.documentElement.classList.add(lang === 'en' ? 'lang-en' : 'lang-cs');
+  })();
+</script>
   <meta name="viewport" content="width=device-width,initial-scale=1" />
   <title>Mayrau Shred Fest No.4 (2026)</title>
   <meta name="description" content="Mayrau Shred Fest No.4 – Onewheel EOL 2026. 19. 6. 2026. Vinařice u Kladna." />
