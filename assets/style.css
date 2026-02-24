@@ -231,3 +231,18 @@ html.lang-en [data-lang="cs"] { display: none !important; }
   color: rgba(255,255,255,.8);
   margin-top: 2px;
 }
+/* Stabilní hero poměr stran na desktopu */
+.heroImg{
+  min-height: unset;               /* zruší fixní min-height */
+  height: auto;
+  aspect-ratio: 21 / 9;            /* wide banner */
+  background-size: cover;
+  background-position: center;
+}
+
+/* Na mobilu může být trochu vyšší */
+@media (max-width: 700px){
+  .heroImg{
+    aspect-ratio: 16 / 9;
+  }
+}
