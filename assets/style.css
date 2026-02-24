@@ -68,3 +68,13 @@ h1{margin:0 0 10px;font-size:40px;line-height:1.05}
 }
 .footer{margin-top:28px;color:var(--muted);font-size:13px}
 .small{color:var(--muted);font-size:13px}
+.lang{
+  display:flex;gap:8px;align-items:center;
+  border:1px solid rgba(36,40,55,.9);border-radius:999px;
+  padding:4px;background:rgba(18,20,28,.55)
+}
+.lang button{
+  appearance:none;border:0;background:transparent;color:var(--muted);
+  padding:6px 10px;border-radius:999px;cursor:pointer;font-size:13px
+}
+.lang button.active{background:rgba(255,255,255,.12);color:var(--text)}
