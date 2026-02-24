@@ -21,27 +21,21 @@
   const LANG_KEY = 'msf_lang';
   const defaultLang = 'cs';
 
-  function applyLang(lang) {
-    const blocks = document.querySelectorAll('[data-lang]');
-    blocks.forEach((b) => {
-      b.style.display = b.getAttribute('data-lang') === lang ? '' : 'none';
-    });
+ function applyLang(lang) {
+  document.documentElement.classList.toggle('lang-cs', lang === 'cs');
+  document.documentElement.classList.toggle('lang-en', lang === 'en');
 
-    document.documentElement.lang = lang;
-
-    const btnCs = document.getElementById('btn-cs');
-    const btnEn = document.getElementById('btn-en');
-    if (btnCs && btnEn) {
-      btnCs.classList.toggle('active', lang === 'cs');
-      btnEn.classList.toggle('active', lang === 'en');
-      btnCs.setAttribute('aria-pressed', String(lang === 'cs'));
-      btnEn.setAttribute('aria-pressed', String(lang === 'en'));
-    }
-
-    try {
-      localStorage.setItem(LANG_KEY, lang);
-    } catch {}
+  const btnCs = document.getElementById('btn-cs');
+  const btnEn = document.getElementById('btn-en');
+  if (btnCs && btnEn) {
+    btnCs.classList.toggle('active', lang === 'cs');
+    btnEn.classList.toggle('active', lang === 'en');
+    btnCs.setAttribute('aria-pressed', String(lang === 'cs'));
+    btnEn.setAttribute('aria-pressed', String(lang === 'en'));
   }
+
+  try { localStorage.setItem('msf_lang', lang); } catch {}
+}
 
   function getSavedLang() {
     try {
