@@ -194,3 +194,40 @@ html.lang-en [data-lang="cs"] { display: none !important; }
 .heroImg.bombon{
   background-position: center top;
 }
+/* ===== Overlay badge ===== */
+
+.heroImg{
+  position: relative;
+}
+
+/* badge box */
+.badge{
+  position: absolute;
+  left: 16px;
+  bottom: 16px;
+
+  background: rgba(0,0,0,.55);
+  backdrop-filter: blur(6px);
+  -webkit-backdrop-filter: blur(6px);
+
+  padding: 10px 14px;
+  border-radius: 12px;
+  border: 1px solid rgba(255,255,255,.18);
+
+  box-shadow: 0 10px 25px rgba(0,0,0,.45);
+}
+
+/* name */
+.badge-title{
+  font-weight: 700;
+  font-size: 14px;
+  color: #fff;
+  line-height: 1.1;
+}
+
+/* role */
+.badge-sub{
+  font-size: 12px;
+  color: rgba(255,255,255,.8);
+  margin-top: 2px;
+}
