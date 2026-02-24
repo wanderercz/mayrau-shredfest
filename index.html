@@ -4,333 +4,72 @@
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width,initial-scale=1" />
   <title>Mayrau Shred Fest No.4 (2026)</title>
-  <meta name="description" content="Mayrau Shred Fest No.4 – Onewheel EOL 2026. 19. 6. 2026. Vinařice u Kladna. Registrace na naZávody.cz." />
-
-  <style>
-    :root{
-      --bg:#0b0c10;
-      --panel:#12141c;
-      --text:#e9ecf1;
-      --muted:#a6adbb;
-      --line:#242837;
-      --accent:#ffffff;
-      --btn:#ffffff;
-      --btnText:#0b0c10;
-    }
-    *{box-sizing:border-box}
-    body{
-      margin:0;
-      font-family: ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto, Arial, "Noto Sans", "Apple Color Emoji","Segoe UI Emoji";
-      background: radial-gradient(1200px 800px at 30% -10%, #1a1f33 0%, var(--bg) 45%) fixed;
-      color:var(--text);
-      line-height:1.55;
-    }
-    a{color:inherit}
-    .wrap{max-width:1100px;margin:0 auto;padding:28px 18px 60px}
-    header{
-      display:flex;align-items:center;justify-content:space-between;gap:16px;
-      position:sticky;top:0;backdrop-filter: blur(10px);
-      background: linear-gradient(to bottom, rgba(11,12,16,.88), rgba(11,12,16,.55));
-      border-bottom:1px solid rgba(36,40,55,.6);
-      padding:14px 18px;
-      z-index:10;
-    }
-    .brand{display:flex;align-items:center;gap:12px}
-    .brand img{height:44px;width:auto;display:block}
-    .brand b{font-size:14px;letter-spacing:.12em;text-transform:uppercase}
-    nav{display:flex;gap:14px;flex-wrap:wrap}
-    nav a{font-size:13px;color:var(--muted);text-decoration:none}
-    nav a:hover{color:var(--text)}
-    .lang{
-      display:flex;gap:8px;align-items:center;
-      border:1px solid rgba(36,40,55,.9);border-radius:999px;
-      padding:4px;background:rgba(18,20,28,.55)
-    }
-    .lang button{
-      appearance:none;border:0;background:transparent;color:var(--muted);
-      padding:6px 10px;border-radius:999px;cursor:pointer;font-size:13px
-    }
-    .lang button.active{background:rgba(255,255,255,.12);color:var(--text)}
-    .hero{padding:34px 0 20px}
-    .grid{display:grid;grid-template-columns: 1.2fr .8fr;gap:18px}
-    @media (max-width: 900px){ .grid{grid-template-columns:1fr} header{position:relative} }
-    .card{
-      background: linear-gradient(180deg, rgba(18,20,28,.9), rgba(18,20,28,.55));
-      border:1px solid rgba(36,40,55,.85);
-      border-radius:18px;
-      padding:18px;
-      box-shadow: 0 12px 30px rgba(0,0,0,.35);
-    }
-    h1{margin:0 0 10px;font-size:40px;line-height:1.05}
-    @media (max-width: 520px){ h1{font-size:32px} }
-    .sub{color:var(--muted);margin:0 0 18px}
-    .pillRow{display:flex;gap:10px;flex-wrap:wrap;margin:14px 0 0}
-    .pill{
-      font-size:12px;color:var(--muted);
-      border:1px solid rgba(36,40,55,.9);
-      padding:7px 10px;border-radius:999px;background:rgba(0,0,0,.12)
-    }
-    .actions{display:flex;gap:10px;flex-wrap:wrap;margin-top:14px}
-    .btn{
-      display:inline-flex;align-items:center;justify-content:center;gap:8px;
-      padding:10px 14px;border-radius:12px;
-      border:1px solid rgba(255,255,255,.16);
-      text-decoration:none;font-weight:700;font-size:14px;
-      background:rgba(255,255,255,.08);
-      color:var(--text);
-    }
-    .btn.primary{
-      background:var(--btn); color:var(--btnText); border-color:transparent;
-    }
-    .btn:hover{transform: translateY(-1px)}
-    section{padding:14px 0}
-    h2{margin:0 0 10px;font-size:22px}
-    p{margin:0 0 10px;color:var(--muted)}
-    ul{margin:10px 0 0 18px;color:var(--muted)}
-    .two{display:grid;grid-template-columns:1fr 1fr;gap:18px}
-    @media (max-width: 900px){ .two{grid-template-columns:1fr} }
-    .footer{margin-top:28px;color:var(--muted);font-size:13px}
-    .tiny{font-size:12px;color:var(--muted)}
-    .sep{height:1px;background:rgba(36,40,55,.85);margin:14px 0}
-    .kpi{display:grid;grid-template-columns:repeat(3,1fr);gap:10px}
-    @media (max-width: 520px){ .kpi{grid-template-columns:1fr} }
-    .kpi .card{padding:14px}
-    .kpi b{font-size:18px}
-    .kpi span{display:block;color:var(--muted);font-size:12px;margin-top:4px}
-    .langBlock{display:none}
-    .langBlock.active{display:block}
-  </style>
+  <link rel="stylesheet" href="assets/style.css">
 </head>
-
 <body>
-  <header>
-    <div class="brand">
-      <img src="assets/logo.png" alt="Mayrau Shred Fest logo" />
-      <div>
-        <b>Mayrau Shred Fest</b><br>
-        <span class="tiny">No.4 • Onewheel • EOL 2026</span>
+<header>
+  <div class="brand">
+    <img src="assets/logo.png" alt="Mayrau Shred Fest logo" />
+    <div><b>Mayrau Shred Fest</b><br><span class="small">No.4 • Onewheel • EOL 2026</span></div>
+  </div>
+  <nav>
+    <a href="index.html">Home</a>
+    <a href="info.html">Info</a>
+    <a href="track.html">Track</a>
+    <a href="accommodation.html">Accommodation</a>
+    <a href="rules.html">Rules</a>
+  </nav>
+</header>
+
+<main class="wrap">
+  <div class="grid">
+    <div class="card">
+      <h1>Mayrau Shred Fest No.4</h1>
+      <p class="sub">Onewheel (EOL) závod na unikátní MTB trati na zalesněných haldách u skanzenu Mayrau.</p>
+
+      <div class="pillRow">
+        <div class="pill">📅 19. 6. 2026</div>
+        <div class="pill">📍 50.1642486N, 14.0838728E</div>
+        <div class="pill">🏁 Onewheel Trail ~1800 m</div>
+      </div>
+
+      <div class="actions">
+        <a class="btn primary" target="_blank" rel="noopener"
+           href="https://www.nazavody.cz/zavod/711-mayrau-shred-fest-no-4-onewheel-eol-2026/">
+          Registrace & info (naZávody)
+        </a>
+        <a class="btn" target="_blank" rel="noopener"
+           href="https://www.nazavody.cz/startovni-listina/711-mayrau-shred-fest-no-4-onewheel-eol-2026/1545-onewheel-trail-open">
+          Start list
+        </a>
+        <a class="btn" target="_blank" rel="noopener"
+           href="https://www.google.com/maps?q=50.1642486,14.0838728">
+          Mapa
+        </a>
+      </div>
+
+      <div class="sep"></div>
+
+      <div class="actions">
+        <a class="btn" target="_blank" rel="noopener" href="https://www.instagram.com/onewheelcz/">Instagram</a>
+        <a class="btn" target="_blank" rel="noopener" href="https://fb.me/e/2D2bfkdKq">Facebook</a>
+        <a class="btn" target="_blank" rel="noopener" href="https://www.youtube.com/watch?v=-c7FNTtrHKQ&feature=youtu.be">YouTube (2025)</a>
       </div>
     </div>
 
-    <nav>
-      <a href="#info">Info</a>
-      <a href="#track">Trať</a>
-      <a href="#schedule">Harmonogram</a>
-      <a href="#location">Místo</a>
-      <a href="#contact">Kontakt</a>
-    </nav>
-
-    <div class="lang" aria-label="Language switch">
-      <button id="btn-cs" class="active" type="button">CZ</button>
-      <button id="btn-en" type="button">EN</button>
+    <div class="card">
+      <div class="heroImg" style="background-image:url('assets/hero.webp');"></div>
+      <div class="sep"></div>
+      <p class="small">
+        Pořadatel: <b>Czechoslovak Onewheel Association z.s.</b><br>
+        Harmonogram dle naZávody: akreditace 08:00–10:00, start 10:30.  
+      </p>
     </div>
-  </header>
+  </div>
 
-  <main class="wrap">
-    <div class="hero grid">
-      <div class="card">
-        <div class="langBlock active" data-lang="cs">
-          <h1>Mayrau Shred Fest No.4</h1>
-          <p class="sub">
-            Závod Onewheel (EOL) na unikátní MTB trati na zalesněných haldách u skanzenu Mayrau.
-          </p>
-        </div>
+  <div class="footer">© 2026 Mayrau Shred Fest • mayrau-shredfest.eu</div>
+</main>
 
-        <div class="langBlock" data-lang="en">
-          <h1>Mayrau Shred Fest No.4</h1>
-          <p class="sub">
-            Onewheel (EOL) race on a unique MTB trail built on forested spoil heaps next to the Mayrau mining museum.
-          </p>
-        </div>
-
-        <div class="pillRow">
-          <div class="pill">📅 19. 6. 2026</div>
-          <div class="pill">📍 50.1642486N, 14.0838728E</div>
-          <div class="pill">🏁 Onewheel Trail ~1800 m</div>
-        </div>
-
-        <div class="actions">
-          <a class="btn primary" href="https://www.nazavody.cz/zavod/711-mayrau-shred-fest-no-4-onewheel-eol-2026/" target="_blank" rel="noopener">
-            Registrace & informace (naZávody)
-          </a>
-          <a class="btn" href="https://www.nazavody.cz/registrace/711-mayrau-shred-fest-no-4-onewheel-eol-2026/1545-onewheel-trail" target="_blank" rel="noopener">
-            Přímá registrace
-          </a>
-          <a class="btn" href="https://www.google.com/maps?q=50.1642486,14.0838728" target="_blank" rel="noopener">
-            Otevřít v mapě
-          </a>
-        </div>
-
-        <div class="sep"></div>
-
-        <div class="kpi">
-          <div class="card">
-            <b>09:00–10:00</b>
-            <span>Akreditace</span>
-          </div>
-          <div class="card">
-            <b>10:30</b>
-            <span>Start závodu</span>
-          </div>
-          <div class="card">
-            <b>CZOA</b>
-            <span>Pořadatel: Czechoslovak Onewheel Association z.s.</span>
-          </div>
-        </div>
-      </div>
-
-      <div class="card" id="info">
-        <div class="langBlock active" data-lang="cs">
-          <h2>O závodě</h2>
-          <p>
-            Mayrau Shred Fest je vyvrcholení závodní sezóny Onewheel v ČR a součást European Onewheel League.
-          </p>
-          <p class="tiny">
-            Detailní propozice, startovka a platby jsou vedené v systému naZávody.
-          </p>
-        </div>
-
-        <div class="langBlock" data-lang="en">
-          <h2>About</h2>
-          <p>
-            Mayrau Shred Fest is a highlight of the Czech Onewheel racing season and part of the European Onewheel League.
-          </p>
-          <p class="tiny">
-            Full details, start list and payments are handled via naZávody.
-          </p>
-        </div>
-
-        <div class="sep"></div>
-
-        <div class="langBlock active" data-lang="cs">
-          <h2>Disciplíny</h2>
-          <ul>
-            <li>Onewheel Trail (hlavní závod)</li>
-            <li>Chair Race (addon v registraci)</li>
-          </ul>
-        </div>
-        <div class="langBlock" data-lang="en">
-          <h2>Disciplines</h2>
-          <ul>
-            <li>Onewheel Trail (main race)</li>
-            <li>Chair Race (addon in registration)</li>
-          </ul>
-        </div>
-      </div>
-    </div>
-
-    <section class="two" id="track">
-      <div class="card">
-        <div class="langBlock active" data-lang="cs">
-          <h2>Trať</h2>
-          <p>
-            MTB trať (~1800 m) v lesním prostředí se sjezdy a výjezdy různé obtížnosti. Unikátní profil díky haldám z těžby uhlí.
-          </p>
-          <p class="tiny">
-            Text vychází z původního webu a popisu závodu. :contentReference[oaicite:4]{index=4}
-          </p>
-        </div>
-        <div class="langBlock" data-lang="en">
-          <h2>Trail</h2>
-          <p>
-            An ~1800 m MTB trail in a forest environment with multiple descents and climbs. Its profile is unique thanks to the former mining spoil heaps.
-          </p>
-          <p class="tiny">
-            Based on the original website and race description. :contentReference[oaicite:5]{index=5}
-          </p>
-        </div>
-      </div>
-
-      <div class="card" id="schedule">
-        <div class="langBlock active" data-lang="cs">
-          <h2>Harmonogram</h2>
-          <ul>
-            <li>Akreditace: 09:00–10:00</li>
-            <li>Start: 10:30</li>
-            <li>Konec: TBD</li>
-          </ul>
-          <p class="tiny">Zdroj: naZávody. :contentReference[oaicite:6]{index=6}</p>
-        </div>
-
-        <div class="langBlock" data-lang="en">
-          <h2>Schedule</h2>
-          <ul>
-            <li>Accreditation: 09:00–10:00</li>
-            <li>Race start: 10:30</li>
-            <li>Estimated end: TBA</li>
-          </ul>
-          <p class="tiny">Source: naZávody. :contentReference[oaicite:7]{index=7}</p>
-        </div>
-      </div>
-    </section>
-
-    <section class="two" id="location">
-      <div class="card">
-        <div class="langBlock active" data-lang="cs">
-          <h2>Místo</h2>
-          <p>
-            Závod se nachází vedle skanzenu Mayrau (Vinařice u Kladna). Trať vede přes lesní haldy a míjí technické pozůstatky z provozu dolu.
-          </p>
-          <p class="tiny">Popis lokace vychází z původního webu. :contentReference[oaicite:8]{index=8}</p>
-        </div>
-
-        <div class="langBlock" data-lang="en">
-          <h2>Location</h2>
-          <p>
-            The race takes place next to the Mayrau mining museum (Vinařice near Kladno). The trail runs on wooded spoil heaps and passes remnants from the mine’s operational days.
-          </p>
-          <p class="tiny">Based on the original website. :contentReference[oaicite:9]{index=9}</p>
-        </div>
-      </div>
-
-      <div class="card" id="contact">
-        <div class="langBlock active" data-lang="cs">
-          <h2>Kontakt</h2>
-          <p>Pořadatel: <b>Czechoslovak Onewheel Association z.s.</b></p>
-          <p class="tiny">
-            Aktuální kontakty a odkazy (IG/FB) jsou na stránce závodu v naZávody. :contentReference[oaicite:10]{index=10}
-          </p>
-          <div class="actions">
-            <a class="btn" href="https://www.nazavody.cz/zavod/711-mayrau-shred-fest-no-4-onewheel-eol-2026/" target="_blank" rel="noopener">Otevřít detail závodu</a>
-          </div>
-        </div>
-
-        <div class="langBlock" data-lang="en">
-          <h2>Contact</h2>
-          <p>Organizer: <b>Czechoslovak Onewheel Association z.s.</b></p>
-          <p class="tiny">
-            Current contacts and social links (IG/FB) are listed on the race page on naZávody. :contentReference[oaicite:11]{index=11}
-          </p>
-          <div class="actions">
-            <a class="btn" href="https://www.nazavody.cz/zavod/711-mayrau-shred-fest-no-4-onewheel-eol-2026/" target="_blank" rel="noopener">Open race page</a>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <div class="footer">
-      © 2026 Mayrau Shred Fest • GitHub Pages • Domain: mayrau-shredfest.eu
-    </div>
-  </main>
-
-  <script>
-    const btnCs = document.getElementById('btn-cs');
-    const btnEn = document.getElementById('btn-en');
-    const blocks = Array.from(document.querySelectorAll('.langBlock'));
-
-    function setLang(lang){
-      blocks.forEach(b => b.classList.toggle('active', b.dataset.lang === lang));
-      btnCs.classList.toggle('active', lang === 'cs');
-      btnEn.classList.toggle('active', lang === 'en');
-      document.documentElement.lang = lang;
-      localStorage.setItem('msf_lang', lang);
-    }
-
-    btnCs.addEventListener('click', () => setLang('cs'));
-    btnEn.addEventListener('click', () => setLang('en'));
-
-    const saved = localStorage.getItem('msf_lang');
-    if(saved === 'en') setLang('en');
-  </script>
+<script src="assets/site.js"></script>
 </body>
 </html>
