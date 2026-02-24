@@ -4,14 +4,19 @@
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width,initial-scale=1" />
   <title>Mayrau Shred Fest No.4 (2026)</title>
+  <meta name="description" content="Mayrau Shred Fest No.4 – Onewheel EOL 2026. 19. 6. 2026. Vinařice u Kladna." />
   <link rel="stylesheet" href="assets/style.css">
 </head>
 <body>
 <header>
   <div class="brand">
     <img src="assets/logo.png" alt="Mayrau Shred Fest logo" />
-    <div><b>Mayrau Shred Fest</b><br><span class="small">No.4 • Onewheel • EOL 2026</span></div>
+    <div>
+      <b>Mayrau Shred Fest</b><br>
+      <span class="small">No.4 • Onewheel • EOL 2026</span>
+    </div>
   </div>
+
   <nav>
     <a href="index.html">Home</a>
     <a href="info.html">Info</a>
@@ -19,13 +24,25 @@
     <a href="accommodation.html">Accommodation</a>
     <a href="rules.html">Rules</a>
   </nav>
+
+  <div class="lang" aria-label="Language switch">
+    <button id="btn-cs" class="active" type="button" aria-pressed="true">CZ</button>
+    <button id="btn-en" type="button" aria-pressed="false">EN</button>
+  </div>
 </header>
 
 <main class="wrap">
   <div class="grid">
     <div class="card">
-      <h1>Mayrau Shred Fest No.4</h1>
-      <p class="sub">Onewheel (EOL) závod na unikátní MTB trati na zalesněných haldách u skanzenu Mayrau.</p>
+      <div data-lang="cs">
+        <h1>Mayrau Shred Fest No.4</h1>
+        <p class="sub">Onewheel (EOL) závod na MTB trati vybudované na zalesněných haldách u skanzenu Mayrau.</p>
+      </div>
+
+      <div data-lang="en">
+        <h1>Mayrau Shred Fest No.4</h1>
+        <p class="sub">Onewheel (EOL) race on a unique MTB trail built on forested spoil heaps next to the Mayrau mining museum.</p>
+      </div>
 
       <div class="pillRow">
         <div class="pill">📅 19. 6. 2026</div>
@@ -36,15 +53,20 @@
       <div class="actions">
         <a class="btn primary" target="_blank" rel="noopener"
            href="https://www.nazavody.cz/zavod/711-mayrau-shred-fest-no-4-onewheel-eol-2026/">
-          Registrace & info (naZávody)
+          <span data-lang="cs">Registrace & info (naZávody)</span>
+          <span data-lang="en">Registration & info (naZávody)</span>
         </a>
+
         <a class="btn" target="_blank" rel="noopener"
            href="https://www.nazavody.cz/startovni-listina/711-mayrau-shred-fest-no-4-onewheel-eol-2026/1545-onewheel-trail-open">
-          Start list
+          <span data-lang="cs">Start list</span>
+          <span data-lang="en">Start list</span>
         </a>
+
         <a class="btn" target="_blank" rel="noopener"
            href="https://www.google.com/maps?q=50.1642486,14.0838728">
-          Mapa
+          <span data-lang="cs">Mapa</span>
+          <span data-lang="en">Map</span>
         </a>
       </div>
 
@@ -53,16 +75,41 @@
       <div class="actions">
         <a class="btn" target="_blank" rel="noopener" href="https://www.instagram.com/onewheelcz/">Instagram</a>
         <a class="btn" target="_blank" rel="noopener" href="https://fb.me/e/2D2bfkdKq">Facebook</a>
-        <a class="btn" target="_blank" rel="noopener" href="https://www.youtube.com/watch?v=-c7FNTtrHKQ&feature=youtu.be">YouTube (2025)</a>
+        <a class="btn" target="_blank" rel="noopener" href="https://www.youtube.com/watch?v=-c7FNTtrHKQ&feature=youtu.be">
+          <span data-lang="cs">YouTube (minulý ročník)</span>
+          <span data-lang="en">YouTube (last year)</span>
+        </a>
+      </div>
+
+      <div class="sep"></div>
+
+      <div class="kpi">
+        <div class="card">
+          <b>08:00–10:00</b>
+          <span data-lang="cs">Akreditace</span>
+          <span data-lang="en">Accreditation</span>
+        </div>
+        <div class="card">
+          <b>10:30</b>
+          <span data-lang="cs">Start závodu</span>
+          <span data-lang="en">Race start</span>
+        </div>
+        <div class="card">
+          <b>CZOA</b>
+          <span data-lang="cs">Pořadatel: Czechoslovak Onewheel Association z.s.</span>
+          <span data-lang="en">Organizer: Czechoslovak Onewheel Association z.s.</span>
+        </div>
       </div>
     </div>
 
     <div class="card">
-      <div class="heroImg" style="background-image:url('assets/hero.webp');"></div>
+      <div class="heroImg" data-hero="assets/hero.webp" style="background-image:url('assets/hero.webp');"></div>
       <div class="sep"></div>
-      <p class="small">
-        Pořadatel: <b>Czechoslovak Onewheel Association z.s.</b><br>
-        Harmonogram dle naZávody: akreditace 08:00–10:00, start 10:30.  
+      <p class="small" data-lang="cs">
+        Detaily závodu, propozice, startovní listiny a platby jsou vedené v systému naZávody.
+      </p>
+      <p class="small" data-lang="en">
+        Full race details, start lists and payments are handled via the naZávody system.
       </p>
     </div>
   </div>
