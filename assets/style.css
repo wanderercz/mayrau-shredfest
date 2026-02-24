@@ -81,3 +81,42 @@ h1{margin:0 0 10px;font-size:40px;line-height:1.05}
 /* Language: default CZ unless html has .lang-en */
 html.lang-cs [data-lang="en"] { display: none !important; }
 html.lang-en [data-lang="cs"] { display: none !important; }
+/* Mobile header layout fix */
+@media (max-width: 900px){
+  header{
+    display:grid !important;
+    grid-template-columns: 1fr auto;
+    grid-template-areas:
+      "brand lang"
+      "nav   nav";
+    gap: 10px 12px;
+    align-items:center;
+  }
+
+  .brand{ grid-area: brand; min-width: 0; }
+  nav{
+    grid-area: nav;
+    width: 100%;
+    display:flex;
+    gap:10px;
+    flex-wrap: nowrap;          /* aby se to nelámalo divně */
+    overflow-x: auto;           /* můžeš posouvat prstem */
+    -webkit-overflow-scrolling: touch;
+    padding-bottom: 4px;
+  }
+
+  nav a{
+    white-space: nowrap;
+    padding: 8px 10px;
+    border: 1px solid rgba(36,40,55,.85);
+    border-radius: 999px;
+    background: rgba(0,0,0,.10);
+  }
+
+  .lang{ grid-area: lang; justify-self:end; }
+
+  /* pokud máš v headeru ještě datum .small jako samostatný blok, skryj ho na mobilu */
+  header > .small{
+    display:none;
+  }
+}
